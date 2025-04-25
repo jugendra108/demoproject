@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                bat 'dotnet publish -c Release -o publish_output'
+                bat 'dotnet publish HDFC_Vyapar/Notification.csproj -c Release -o publish_output'
             }
         }
     }
