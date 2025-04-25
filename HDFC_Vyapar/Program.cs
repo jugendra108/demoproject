@@ -14,7 +14,7 @@ namespace SFTP
         static void Main(string[] args)
         {
             log4net.Config.XmlConfigurator.Configure();
-            HelperFunctions.LogMessage(log, enumMessageLevel.info, "DIGI Code Service Progress in On heelo juggu hai");
+            HelperFunctions.LogMessage(log, enumMessageLevel.info, "DIGI Code Service Progress in On heelo rohit hai");
             MainWorker mainWorker = new MainWorker();
             HelperFunctions.LogMessage(log, enumMessageLevel.info, "Main worker Object created");
             try
