@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        dotnet 'dotnet-sdk-6.0'
-    }
-
     stages {
         stage('Restore') {
             steps {
