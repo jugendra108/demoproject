@@ -17,5 +17,10 @@ pipeline {
                 bat 'dotnet test'
             }
         }
+        stage('Publish') {
+            steps {
+                bat 'dotnet publish -c Release -o publish_output'
+            }
+        }
     }
 }
